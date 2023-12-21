@@ -1,5 +1,5 @@
 <h1>A Blog Website</h1>
-<p>This Blog website was designed and developed by me as one of the statutory project in my software development project with Binance/Utiva. The root folder has two direcories inside it, namely:
+<p>This Blog website was designed and developed by as a statutory project in my software development project with ALX. The root folder has two direcories inside it, namely:
 <ul>
 <li><h2>API folder</h2>
 <p>This holds the backend part of the project, all the behind the scene functionalities on the website are in this folder, it has a model folder where user and posts were modelled, the index.js is where CRUD concept and REST api works, all datas are being stored in the mongoDB database, with mongoose</p>
