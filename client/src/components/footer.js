@@ -7,7 +7,7 @@ const Footer = () => {
             <div>
                 <img src={img} alt="" className='footer__logo' />
             </div>
-            <p className="right">Authored by <span>Jubreel Adebayo</span></p>
+            <p className="right">Authored by <span>Jubreel, Oluwaseun & Chidozie</span></p>
         </footer>
     )
 }

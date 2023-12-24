@@ -27,7 +27,7 @@ const Header = () => {
     return (
         <div>
             <header className="header">
-                <h1><Link to='/'><img src={img} alt='logo' className='logo' />AdebayoBlog</Link></h1>
+                <h1><Link to='/'><img src={img} alt='logo' className='logo' />allRoundBlog</Link></h1>
                 {username && (
                     <>
                         <p className="loggedName">Hi {username}!!!</p>
@@ -49,7 +49,7 @@ const Header = () => {
                    </nav>
             </header>
             <div className='header__text'>
-                <h2 className="welcome-head">Welcome to Adebayo's Blog</h2>
+                <h2 className="welcome-head">Welcome to allRound's Blog</h2>
                 <p className="caption">News, Events, Entertainment, Lifestyle, Fashion, Beauty, Inspiration and yes...</p>
             </div>
            </div>
