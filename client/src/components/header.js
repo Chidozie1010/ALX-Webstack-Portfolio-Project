@@ -27,32 +27,37 @@ const Header = () => {
     return (
         <div>
             <header className="header">
-                <h1><Link to='/'><img src={img} alt='logo' className='logo' />allRoundBlog</Link></h1>
-                {username && (
-                    <>
-                        <p className="loggedName">Hi {username}!!!</p>
-                    </>
-                )}
-                <nav className="nav">
+                <div>
+                    <Link to='/'><img src={img} alt='logo' className='logo' /></Link>
+                    <h1><Link to='/'>allRoundBlog</Link></h1>
+                </div>
+                <div>
                     {username && (
                         <>
-                            <Link to="create" className="nav__link1">Create new post</Link>
-                            <Link to='/login' className="nav__link1" onClick={logout}>Logout</Link>
+                            <p className="loggedName">Hi {username}!!!</p>
                         </>
                     )}
-                    {!username && (
-                        <>
-                            <Link to="/login" className="nav__link">Login</Link>
-                            <Link to="/register" className="nav__link">Register</Link>
-                        </>
-                    )}
+                    <nav className="nav">
+                        {username && (
+                            <>
+                                <Link to="create" className="nav__link1">Create new post</Link>
+                                <Link to='/login' className="nav__link1" onClick={logout}>Logout</Link>
+                            </>
+                        )}
+                        {!username && (
+                            <>
+                                <Link to="/login" className="nav__link">Login</Link>
+                                <Link to="/register" className="nav__link">Register</Link>
+                            </>
+                        )}
                    </nav>
+                </div>
             </header>
             <div className='header__text'>
                 <h2 className="welcome-head">Welcome to allRound's Blog</h2>
                 <p className="caption">News, Events, Entertainment, Lifestyle, Fashion, Beauty, Inspiration and yes...</p>
             </div>
-           </div>
+        </div>
     )
 }
 
