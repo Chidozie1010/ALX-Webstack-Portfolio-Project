@@ -583,7 +583,7 @@ a svg {
   }
 
   .postpage {
-    padding: 0 4% 10rem 4%;
+    padding: 0 4% 20rem 4%;
   }
 
   .postpage h1 {
@@ -597,6 +597,7 @@ a svg {
   .footer {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    height: 10rem;
   }
   
 }
