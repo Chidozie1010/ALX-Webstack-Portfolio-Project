@@ -31,6 +31,8 @@ const Header = () => {
                     <Link to='/'><img src={img} alt='logo' className='logo' /></Link>
                     <h1><Link to='/'>allRoundBlog</Link></h1>
                 </div>
+                <input type='checkbox' name='menu' id='toggle-menu' />
+                <label for='toggle-menu' name='menu' id='open'><a>&#9776;</a></label>
                 <div>
                     {username && (
                         <>
