@@ -91,6 +91,18 @@ html {
   100% { transform: rotate(360deg); }
 }
 
+#open {
+  font-size: 2.5rem;
+  position: absolute;
+  right: 2.5rem;
+  font-weight: bold;
+  display: none;
+}
+
+#toggle-menu {
+  display: none;
+}
+
 
 /* Banner */
 
@@ -473,17 +485,118 @@ a svg {
     margin-left: .5rem;
   }
 
-  
-  
+  .nav__link, .nav__link1 {
+    font-size: 1.3rem;
+  }
 
- 
+  .nav__link1:last-child {
+    margin-left: 1rem;
+  }
 
- 
-  
+  .header__text {
+    padding-top: .2rem;
+  }
 
- 
-  
-  
+  .post {
+    flex-direction: column;
+  }
 
+  .post__img-box {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .postpage {
+    padding: 0 4% 10rem 4%;
+  }
+
+  .postpage h1 {
+    padding: 0 10rem;
+  }
+  
+  .postpage__img {
+    width: 90%;
+  }
+
+  form {
+    width: 80%;
+  }
+}
+
+/* Mobile responsive */
+
+@media screen and (max-width: 450px) {
+  #open {
+   display: block;
+   top: 1.0rem
+  }
+
+  .header {
+    flex-direction: column;
+    top: 0;
+    text-align: center;
+  }
+
+  .header div:nth-child(1) {
+    display: block;
+  }
+
+  .logo {
+    width: 8rem;
+  }
+
+  .nav__link, .nav__link1 {
+    display: block;
+    padding: 1.5rem 15.5rem;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .form, .register {
+    width: 90%;
+    margin-top: 5rem;
+  }
+
+  .nav__link:first-child {
+    margin-right: 0rem;
+  }
+
+  nav {
+    display: none;
+  }
+
+  #toggle-menu:checked + #open + div nav {
+    display: block;
+  }
+
+  .header h1{
+    padding-bottom: .5rem;
+  }
+
+  .post {
+    flex-direction: column;
+  }
+
+  .post__img-box {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .postpage {
+    padding: 0 4% 10rem 4%;
+  }
+
+  .postpage h1 {
+    padding: 0 10rem;
+  }
+  
+  .postpage__img {
+    width: 90%;
+  }
+
+  .footer {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
   
 }
