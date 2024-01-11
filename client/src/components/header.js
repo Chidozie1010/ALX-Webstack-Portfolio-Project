@@ -5,6 +5,7 @@ import img from '../img/logo.png'
 
 const Header = () => {
     const {setUserInfo, userInfo} = useContext(UserContext)
+    
     useEffect(() => {
         fetch('http://localhost:5000/profile', {
             credentials: 'include',
