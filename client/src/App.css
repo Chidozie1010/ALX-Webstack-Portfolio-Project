@@ -52,8 +52,9 @@ html {
 }
 
 .logo {
-  width: 6rem;
+  width: 5rem;
   animation: spin 15s linear infinite;
+  margin-right: 2rem;
 }
 
 .header div:nth-child(1) {
